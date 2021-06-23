@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Style inputs */
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #285ceb;
+        color: white;
+        padding: 12px 20px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #2a92a5;
+      }
+
+      /* Style the container/contact section */
+      .container {
+        border-radius: 10px;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Storage
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Household Storage</a>
+          <a href="#">Moving Storage</a>
+          <a href="#">Business Storage</a>
+          <a href="#">Vehicle Storage</a>
+          <a href="#">Climate Controlled</a>
+        </div>
+      </div>
+      <a href="#">Locations</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Resources
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Site Guide</a>
+          <a href="#">Storage Tips</a>
+          <a href="#">Packing & Moving Supplies</a>
+          <a href="#">CubeSmart Services</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Deals
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Moving Truck Rental Deals</a>
+          <a href="#">Military Storage Deals</a>
+          <a href="#">College Student Storage Deals</a>
+          <a href="#">Refer a Friend</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" class="active">
+          About Us
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Commitment</a>
+          <a href="#">Corporate Responsibility</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Self Storage Management</a>
+          <a href="#">National Acounts</a>
+          <a href="#">Commercial Leasing</a>
+          <a href="#">Acquisitions</a>
+          <a href="#">Careers</a>
+          <a href="#" class="active">Contact Us</a>
+        </div>
+      </div>
+      <a href="#">The Storage Space Blog</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        ><i class="fa fa-bars"></i
+      ></a>
+    </div>
+    <div class="container">
+      <div style="text-align: center">
+        <h2>Contact Us</h2>
+        <p>Leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/5.jpg" style="width: 100%" />
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+          <div class="content">
+            <p>
+              <b> 4622 Sherwood Ln, Houston TX, 77092 713-659-0400 </b><br />
+              store@storagesolutionsplus.com
+              <br />
+              <br />
+              <strong>OFFICE HOURS:</strong>
+
+              Monday - Friday / 9:00 am to 5:30 pm Saturday / 8:30 am to 5:00 pm
+              Sunday / Closed
+              <br />
+              <br />
+              <b>GATE ACCESS HOURS:</b>
+
+              Monday - Sunday / 6:30 am to 8:30 pm
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="www.facebook.com">Facebook</a></p>
+      <p>© 2018. Storagesolutionsplus.com. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

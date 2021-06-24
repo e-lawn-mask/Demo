@@ -255,26 +255,23 @@ footer {
 }
 
 .ytBox {
-  /*display: flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;*/
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   background-color: #e00707;
   padding: 2rem 2rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .ytBoxItem {
-  order: 2;
-  flex-grow: 4;
   color: white;
   font-size: 2rem;
   display: inline-block;
-  width: auto;
-  overflow: auto;
-  border: 5px outset black;
+  padding: 0rem 3rem;
+}
+.videobox {
+  display: inline-block;
 }
 
 .features {
@@ -287,4 +284,36 @@ footer {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feedback {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;*/
+  background-color: #efefef;
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.blog {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;*/
+  background-color: white;
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feedback-item {
+  background-color: #666;
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem 2rem;
+  font-family: sans-serif;
 }

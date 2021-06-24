@@ -286,6 +286,10 @@ footer {
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+.features-item {
+  display: grid;
+  gap: 1rem;
+}
 
 .feedback {
   /*display: flex;

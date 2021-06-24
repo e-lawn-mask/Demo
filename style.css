@@ -313,7 +313,14 @@ footer {
 .feedback-item {
   background-color: #666;
   color: white;
-  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0px;
+  display: inline-block;
+}
+.feedback-text {
   padding: 2rem 2rem;
+  display: inline-block;
+  font-size: 1.5rem;
   font-family: sans-serif;
 }

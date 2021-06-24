@@ -322,6 +322,7 @@ footer {
   flex-direction: column;
   flex: 1 1 0px;
   display: inline-block;
+  margin: 2em;
 }
 .feedback-text {
   padding: 2rem 2rem;

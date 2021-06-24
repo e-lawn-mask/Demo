@@ -4,6 +4,21 @@ body {
   --color-bg: #e00707;
 }
 
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .content {
   padding: 2rem 2rem;
 }
@@ -237,4 +252,39 @@ footer {
 
 .bottom-gyan {
   text-align: center;
+}
+
+.ytBox {
+  /*display: flex;
+  flex-direction: row;
+  align-items: center;*/
+  justify-content: center;
+  background-color: #e00707;
+  padding: 2rem 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.ytBoxItem {
+  order: 2;
+  flex-grow: 4;
+  color: white;
+  font-size: 2rem;
+  display: inline-block;
+  width: auto;
+  overflow: auto;
+  border: 5px outset black;
+}
+
+.features {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;*/
+  background-color: #c8d2e1;
+  padding: 2rem 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
